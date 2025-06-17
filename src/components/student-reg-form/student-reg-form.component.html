@@ -1,0 +1,16 @@
+<div class="form-container">
+    <form [formGroup]="studentRegistrationForm" (submit)="onStudentFormSubmit()" >
+
+        <mat-form-field class="example-full-width w-100" appearance="outline">
+            <mat-label>First Name</mat-label>
+            <input type="text" matInput formControlName="firstName" placeholder="Ex. John">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width w-100" appearance="outline">
+            <mat-label>Last Name</mat-label>
+            <input type="text" matInput formControlName="lastName" placeholder="Ex. Doe">
+        </mat-form-field>       
+
+         <button mat-raised-button type="submit">Submit</button>
+    </form>
+</div>
