@@ -86,11 +86,14 @@ export class StudentRegFormComponent {
   updateStudent(studentId: any, studentData: any) {
     this._studentService.updateStudent(studentId, studentData).subscribe({
       next: (res: any) => {
-        console.log('Student updated successfully:', res);
-        this._studentService.sendUpdateStudent$.next(res.data); 
-        this.studentRegistrationForm.reset(); 
+        if (res.success) {
+          this._studentService.sendUpdateStudent$.next(res.data); 
+          this.studentRegistrationForm.reset(); 
+        
+          this.dialogRef.close();
+          this._snackbarService.show(res.message, 'success');
+        }
       
-        this.dialogRef.close();
       },
       error: (error: any) => {
         console.error('Error updating student:', error);

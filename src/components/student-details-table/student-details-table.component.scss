@@ -1,0 +1,5 @@
+.student-details-table table {
+  table-layout: auto !important; // Allow columns to size based on content
+  width: auto;                   // Table width fits content
+//   min-width: 100%;               // Optional: ensures table doesn't shrink too much
+}

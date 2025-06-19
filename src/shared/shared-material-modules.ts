@@ -9,6 +9,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
+import { MatPaginatorModule} from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 
 export const SHARED_MATERIAL_MODULES = [
@@ -22,5 +24,7 @@ export const SHARED_MATERIAL_MODULES = [
   MatFormFieldModule,
   MatDialogModule,
   MatCardModule,
-  MatIconModule
+  MatIconModule,
+  MatPaginatorModule,
+  MatSortModule 
 ];
