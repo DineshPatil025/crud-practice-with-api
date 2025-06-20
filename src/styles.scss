@@ -28,43 +28,46 @@ body {
 
 .snackbar-success.mat-mdc-snack-bar-container {
   .mdc-snackbar__surface {
-    background: rgb(137, 248, 137);
+    background: rgb(186, 240, 186);
 
     .mat-mdc-button {
-      color: white !important;
+      color: black !important;
     }
   }
   .mat-mdc-snack-bar-label.mdc-snackbar__label {
-    color: white;
+    color: black;
     font-weight: 500;
+    font-size: 16px;
     white-space: pre-wrap
   }
 }
 .snackbar-warn.mat-mdc-snack-bar-container {
   .mdc-snackbar__surface {
-    background: orange;
+    background: rgb(236, 202, 137);
 
     .mat-mdc-button {
-      color: white !important;
+      color: black !important;
     }
   }
   .mat-mdc-snack-bar-label.mdc-snackbar__label {
-    color: white;
+    color: black;
     font-weight: 500;
+    font-size: 16px;
     white-space: pre-wrap
   }
 }
 .snackbar-info.mat-mdc-snack-bar-container {
   .mdc-snackbar__surface {
-    background: rgb(142, 142, 241);
+    background: rgb(176, 176, 240);
 
     .mat-mdc-button {
-      color: white !important;
+      color: black !important;
     }
   }
   .mat-mdc-snack-bar-label.mdc-snackbar__label {
-    color: white;
+    color: black;
     font-weight: 500;
+    font-size: 16px;
     white-space: pre-wrap
   }
 }

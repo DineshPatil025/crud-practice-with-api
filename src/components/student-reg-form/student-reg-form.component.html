@@ -2,15 +2,17 @@
   <h2 mat-dialog-title>{{ isInEditMode ? 'Update Student' : 'Register Student' }}</h2>
 
   <mat-dialog-content class="dialog-content">
+
     <mat-form-field appearance="outline" class="w-100">
       <mat-label>First Name</mat-label>
       <input matInput formControlName="firstName" placeholder="Ex. John" />
     </mat-form-field>
 
     <mat-form-field appearance="outline" class="w-100">
-      <mat-label>Last Name</mat-label>
+      <mat-label>Last Name</mat-label> 
       <input matInput formControlName="lastName" placeholder="Ex. Doe" />
     </mat-form-field>
+    
   </mat-dialog-content>
 
   <mat-dialog-actions align="end" class="footer-actions">
