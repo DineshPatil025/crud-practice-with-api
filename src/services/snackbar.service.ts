@@ -10,7 +10,7 @@ export class SnackbarService {
     private snackBar: MatSnackBar
   ) { }
 
-show(message: string, type: string = 'info', action: string = 'Close') {
+show(message: string, type: string = 'info', action: string = 'Close',duration: number = 3000) {
   let panelClass = '';
   switch (type) {
     case 'warn':
@@ -26,6 +26,7 @@ show(message: string, type: string = 'info', action: string = 'Close') {
     panelClass: [panelClass],
     horizontalPosition: 'right',
     verticalPosition: 'bottom',
+    duration: duration,
   });
 }
 

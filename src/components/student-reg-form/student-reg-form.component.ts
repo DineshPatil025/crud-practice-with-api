@@ -32,8 +32,6 @@ export class StudentRegFormComponent {
 
   ngOnInit(): void {
    this.createStudentRegistrationForm();
-   console.log("this.isInEditMode", this.isInEditMode);
-   
    
     this._studentService.isStudentFormEditModeAsObs$.subscribe((isEditMode: boolean) => {
       this.isInEditMode = isEditMode; 
@@ -74,12 +72,9 @@ export class StudentRegFormComponent {
           } else {
             this.studentRegistrationForm.reset();
             this.dialogRef.close();
-            this._snackbarService.show(res.message, 'warn');
+            this._snackbarService.show(res.message, 'success');
           }
         },
-        error: (error: any) => {
-          console.error('Error registering student:', error);
-        }
       });
   }
 

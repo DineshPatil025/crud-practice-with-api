@@ -1,7 +1,7 @@
 <h1>student Details</h1>
 <div class="student-details-table mat-elevation-z8">
 
-  <mat-form-field appearance="outline" class="w-100">
+  <mat-form-field appearance="outline" class="w-100 ">
     <mat-label>Search Student</mat-label>
     <input matInput (keyup)="onSearchStudent($event)" placeholder="search" #input>
   </mat-form-field>
@@ -30,6 +30,9 @@
       <th mat-header-cell *matHeaderCellDef> Action </th>
       <td mat-cell *matCellDef="let element">
 
+        <button (click)="viewStudent(element)" mat-icon-button color="accent" matTooltip="View Student Details">
+          <mat-icon>visibility</mat-icon>
+        </button>
         <button (click)="updateStudent(element._id, element)" mat-icon-button color="primary" matTooltip="Edit Student">
           <mat-icon>edit</mat-icon>
         </button>
