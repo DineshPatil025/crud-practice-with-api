@@ -1,18 +1,17 @@
 import { CommonModule } from '@angular/common';
 import { Component, Inject } from '@angular/core';
 import { Form, FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import {MatInputModule} from '@angular/material/input';
-import {MatButtonModule} from '@angular/material/button';
 import { StudentService } from '../../services/student.service';
 import { SHARED_MATERIAL_MODULES } from '../../shared/shared-material-modules';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { SnackbarService } from '../../services/snackbar.service';
+import { CapitalizeFirstDirective } from '../../directives/capitalize-first.directive';
 
 
 @Component({
   selector: 'app-student-reg-form',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, SHARED_MATERIAL_MODULES],
+  imports: [CommonModule, ReactiveFormsModule, SHARED_MATERIAL_MODULES,CapitalizeFirstDirective],
   templateUrl: './student-reg-form.component.html',
   styleUrl: './student-reg-form.component.scss'
 })

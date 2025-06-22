@@ -3,3 +3,13 @@
   width: auto;                   // Table width fits content
 //   min-width: 100%;               // Optional: ensures table doesn't shrink too much
 }
+
+.no-data-found{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-size: 30px;
+  height: 90vh;
+}

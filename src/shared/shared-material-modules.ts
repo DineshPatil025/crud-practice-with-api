@@ -11,6 +11,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 import { MatPaginatorModule} from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 export const SHARED_MATERIAL_MODULES = [
@@ -26,5 +27,6 @@ export const SHARED_MATERIAL_MODULES = [
   MatCardModule,
   MatIconModule,
   MatPaginatorModule,
-  MatSortModule 
+  MatSortModule,
+  ReactiveFormsModule 
 ];

@@ -1,0 +1,31 @@
+
+
+
+// mat-error {
+//   font-size: 12px;
+//   line-height: 1.4;
+//   margin-top: 4px;
+//   display: block;
+// }
+
+.dialog-form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .dialog-content {
+        flex: 1 1 auto;
+        overflow: auto;
+        padding-top: 20px;
+        mat-form-field {
+            display: block;
+            margin-bottom: 1.2rem
+        }
+    }
+
+    .footer-actions {
+        justify-content: flex-end;
+        display: flex;
+        gap: 8px;
+    }
+}

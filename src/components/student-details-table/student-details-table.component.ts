@@ -51,8 +51,6 @@ export class StudentDetailsTableComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log('StudentDetailsTableComponent dataSource', this.dataSource);
-
     this.getAllStudents();
     this._studentService.sendNewStudentAsObs$.subscribe((newStudent: any) => {
       this.dataSource.data = [...this.dataSource.data, newStudent];
@@ -75,7 +73,6 @@ export class StudentDetailsTableComponent implements OnInit {
 
   getAllStudents() {
     this._studentService.getAllStudents().subscribe((students: any) => {
-      console.log('Fetched students:', students.data);
       this.dataSource.data = students.data;
     }, error => {
       console.error('Error fetching students:', error);
